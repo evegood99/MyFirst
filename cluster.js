@@ -1,12 +1,12 @@
 // create an array with nodes
 var nodes = [{
     id: 1,
-    label: "Node 1",
+    label: "John",
     color: "orange"
   },
   {
     id: 2,
-    label: "Node 2",
+    label: "Thomas",
     color: "DarkViolet",
     font: {
       color: "white"
@@ -14,12 +14,12 @@ var nodes = [{
   },
   {
     id: 3,
-    label: "Node 3",
+    label: "Anna",
     color: "orange"
   },
   {
     id: 4,
-    label: "Node 4",
+    label: "James",
     color: "DarkViolet",
     font: {
       color: "white"
@@ -27,18 +27,18 @@ var nodes = [{
   },
   {
     id: 5,
-    label: "Node 5",
-    color: "orange"
+    label: "Peter",
+    color: "lime"
   },
   {
     id: 6,
-    label: "cid = 1",
+    label: "Mary",
     cid: 1,
-    color: "orange"
+    color: "lime"
   },
   {
     id: 7,
-    label: "cid = 1",
+    label: "Michael",
     cid: 1,
     color: "DarkViolet",
     font: {
@@ -47,61 +47,456 @@ var nodes = [{
   },
   {
     id: 8,
-    label: "cid = 1",
+    label: "David",
+    cid: 1,
+    color: "DarkViolet"
+  },
+  {
+    id: 9,
+    label: "Anthony",
+    cid: 1,
+    color: "DarkViolet"
+  },
+  {
+    id: 10,
+    label: "Bobby",
     cid: 1,
     color: "lime"
   },
   {
-    id: 9,
-    label: "cid = 1",
+    id: 11,
+    label: "Robert",
     cid: 1,
     color: "orange"
   },
   {
-    id: 10,
-    label: "cid = 1",
+    id: 12,
+    label: "Susan",
+    cid: 1,
+    color: "DarkViolet"
+  },
+  {
+    id: 13,
+    label: "Steven",
+    cid: 1,
+    color: "orange"
+  },
+  {
+    id: 14,
+    label: "Charles",
+    cid: 1,
+    color: "DarkViolet"
+  },
+  {
+    id: 15,
+    label: "Ashley",
+    cid: 1,
+    color: "orange"
+  },
+  {
+    id: 16,
+    label: "Richard",
+    cid: 1,
+    color: "orange"
+  },
+  {
+    id: 17,
+    label: "Jessica",
+    cid: 1,
+    color: "orange"
+  },
+  {
+    id: 18,
+    label: "Elizabeth",
+    cid: 1,
+    color: "DarkViolet"
+  },
+  {
+    id: 19,
+    label: "Laura",
     cid: 1,
     color: "lime"
   },
+  {
+    id: 20,
+    label: "Jennifer",
+    cid: 1,
+    color: "lime"
+  },
+  {
+    id: 21,
+    label: "Jackson",
+    cid: 1,
+    color: "lime"
+  },
+  {
+    id: 22,
+    label: "Julia",
+    cid: 1,
+    color: "lime"
+  },
+
+             
 ];
 
 // create an array with edges
 var edges = [{
     from: 1,
-    to: 2
+    to: 8
   },
   {
     from: 1,
-    to: 3
+    to: 9
   },
   {
-    from: 10,
-    to: 4
+    from: 1,
+    to: 13
+  },
+  {
+    from: 1,
+    to: 17
+  },
+  {
+    from: 1,
+    to: 18
   },
   {
     from: 2,
-    to: 5
+    to: 8
+  },
+  {
+    from: 2,
+    to: 9
+  },
+  {
+    from: 2,
+    to: 12
+  },
+  {
+    from: 2,
+    to: 18
+  },
+  {
+    from: 3,
+    to: 1
+  },
+  {
+    from: 3,
+    to: 9
+  },
+  {
+    from: 3,
+    to: 15
+  },
+  {
+    from: 3,
+    to: 21
+  },
+  {
+    from: 4,
+    to: 1
+  },
+  {
+    from: 4,
+    to: 7
+  },
+  {
+    from: 4,
+    to: 12
+  },
+  {
+    from: 4,
+    to: 18
+  },
+  {
+    from: 5,
+    to: 10
+  },
+  {
+    from: 5,
+    to: 21
+  },
+  {
+    from: 5,
+    to: 22
   },
   {
     from: 6,
-    to: 2
+    to: 19
+  },
+  {
+    from: 6,
+    to: 20
+  },
+  {
+    from: 6,
+    to: 21
+  },
+  {
+    from: 6,
+    to: 22
   },
   {
     from: 7,
-    to: 5
+    to: 1
+  },
+  {
+    from: 7,
+    to: 9
+  },
+  {
+    from: 7,
+    to: 18
   },
   {
     from: 8,
-    to: 6
+    to: 1
+  },
+  {
+    from: 8,
+    to: 2
+  },
+  {
+    from: 8,
+    to: 12
+  },
+  {
+    from: 8,
+    to: 15
+  },
+  {
+    from: 9,
+    to: 1
   },
   {
     from: 9,
     to: 7
   },
   {
+    from: 9,
+    to: 8
+  },
+  {
+    from: 9,
+    to: 12
+  },
+  {
+    from: 9,
+    to: 18
+  },
+  {
     from: 10,
+    to: 5
+  },
+  {
+    from: 10,
+    to: 6
+  },
+  {
+    from: 10,
+    to: 19
+  },
+  {
+    from: 10,
+    to: 21
+  },
+  {
+    from: 10,
+    to: 22
+  },
+  {
+    from: 11,
+    to: 1
+  },
+  {
+    from: 11,
+    to: 8
+  },
+  {
+    from: 11,
     to: 9
   },
+  {
+    from: 11,
+    to: 12
+  },
+  {
+    from: 11,
+    to: 15
+  },
+  {
+    from: 12,
+    to: 1
+  },
+  {
+    from: 12,
+    to: 8
+  },
+  {
+    from: 12,
+    to: 9
+  },
+  {
+    from: 13,
+    to: 1
+  },
+  {
+    from: 13,
+    to: 11
+  },
+  {
+    from: 13,
+    to: 17
+  },
+  {
+    from: 14,
+    to: 7
+  },
+  {
+    from: 14,
+    to: 8
+  },
+  {
+    from: 14,
+    to: 9
+  },
+  {
+    from: 14,
+    to: 12
+  },
+  {
+    from: 14,
+    to: 18
+  },
+  {
+    from: 15,
+    to: 1
+  },
+  {
+    from: 15,
+    to: 2
+  },
+  {
+    from: 15,
+    to: 3
+  },
+  {
+    from: 15,
+    to: 8
+  },
+  {
+    from: 15,
+    to: 11
+  },
+  {
+    from: 16,
+    to: 1
+  },
+  {
+    from: 16,
+    to: 2
+  },
+  {
+    from: 16,
+    to: 8
+  },
+  {
+    from: 16,
+    to: 12
+  },
+  {
+    from: 16,
+    to: 15
+  },
+  {
+    from: 17,
+    to: 11
+  },
+  {
+    from: 17,
+    to: 22
+  },
+  {
+    from: 18,
+    to: 2
+  },
+  {
+    from: 18,
+    to: 7
+  },
+  {
+    from: 18,
+    to: 8
+  },
+  {
+    from: 18,
+    to: 9
+  },
+  {
+    from: 19,
+    to: 6
+  },
+  {
+    from: 19,
+    to: 21
+  },
+  {
+    from: 20,
+    to: 6
+  },
+  {
+    from: 20,
+    to: 17
+  },
+  {
+    from: 20,
+    to: 19
+  },
+  {
+    from: 20,
+    to: 21
+  },
+  {
+    from: 20,
+    to: 22
+  },
+  {
+    from: 21,
+    to: 5
+  },
+  {
+    from: 21,
+    to: 6
+  },
+  {
+    from: 21,
+    to: 10
+  },
+  {
+    from: 21,
+    to: 19
+  },
+  {
+    from: 21,
+    to: 22
+  },
+  {
+    from: 22,
+    to: 6
+  },
+  {
+    from: 22,
+    to: 17
+  },
+  {
+    from: 22,
+    to: 20
+  },
+  {
+    from: 22,
+    to: 21
+  },
+
 ];
 
 // create a network
