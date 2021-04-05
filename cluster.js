@@ -49,13 +49,19 @@ var nodes = [{
     id: 8,
     label: "David",
     cid: 1,
-    color: "DarkViolet"
+    color: "DarkViolet",
+    font: {
+      color: "white"
+    },
   },
   {
     id: 9,
     label: "Anthony",
     cid: 1,
-    color: "DarkViolet"
+    color: "DarkViolet",
+    font: {
+      color: "white"
+    },
   },
   {
     id: 10,
@@ -73,7 +79,10 @@ var nodes = [{
     id: 12,
     label: "Susan",
     cid: 1,
-    color: "DarkViolet"
+    color: "DarkViolet",
+    font: {
+      color: "white"
+    },
   },
   {
     id: 13,
@@ -85,7 +94,10 @@ var nodes = [{
     id: 14,
     label: "Charles",
     cid: 1,
-    color: "DarkViolet"
+    color: "DarkViolet",
+    font: {
+      color: "white"
+    },
   },
   {
     id: 15,
@@ -109,7 +121,10 @@ var nodes = [{
     id: 18,
     label: "Elizabeth",
     cid: 1,
-    color: "DarkViolet"
+    color: "DarkViolet",
+    font: {
+      color: "white"
+    },
   },
   {
     id: 19,
